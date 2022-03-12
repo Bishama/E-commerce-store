@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<div class="row" , autocomplete="off" >   <!-- row has 12 columns. col-3*4=12 -->
+    {% for product in products %}
+
+
+        <div class="col-3">
+	        <div class="card" style="width: 10rem;">
+			  	<img src="static/img/{{ product.img }}" class="card-img-top" alt="...">
+			  	<div class="card-body">
+					<div>
+						<b >
+						{{ product.name }}
+						</b>
+					</div>
+					<div>
+						<b>
+						{{ product.price }}
+						</b>
+					</div>
+				    <p class="card-text">{{ product.description }}</p>
+					<div id="addToCart">
+						<a href="/addToCart/{{product.id}}">Add to cart</a>
+					</div>
+        		</div>
+			</div>
+		</div>
+
+
+    {% endfor %}
+</div>
+{% endblock content %}

@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<div class='container'>
+    <form method=POST enctype=multipart/form-data action="{{ url_for('sell') }}" type=".jpeg', '.jpg', '.png', '.gif'">
+
+            <h3>Please upload the picture below</h3>
+            <div class="form-group">
+            <input type=file name=photo class='mb-4 '>
+
+
+            <div class="form-group">
+            <input name = "name" class="form-control form-control-lg" type="text" placeholder="Name of Product">
+            </div>
+
+            <div class="form-group">
+            <input name="price" class="form-control form-control-lg " type="text" placeholder="Price">
+            </div>
+
+            <div class="form-group">
+            <input name="description" class="form-control form-control-lg" type="text" placeholder="Description">
+            </div>
+
+            <input type=submit name=UPLOAD>
+    </form>
+</div>
+
+
+{% endblock content %}
