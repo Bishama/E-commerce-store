@@ -4,7 +4,7 @@
 
 
 #### Description:
-This is an ecommerce website. Users can register for an account. After registering users are taken to the login page.
+This is an e-commerce website. Users can register for an account. After registering users are taken to the login page.
 Users can go to the sell route and upload the image of the product they want to sell along with the product name, price and a short description
 All of the products uploaded by users can be seen on the homepage
 Users can add and remove item from their cart.
